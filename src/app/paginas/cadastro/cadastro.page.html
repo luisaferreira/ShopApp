@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-input placeholder="Nome" color="danger" [(ngModel)]="usuario.nome"></ion-input>
+  <ion-input placeholder="email" color="danger" [(ngModel)]="usuario.email"></ion-input>
+  <ion-input placeholder="senha" color="danger" [(ngModel)]="usuario.senha"></ion-input>
+  <ion-input placeholder="confirme a senha" color="danger" [(ngModel)]="usuario.confSenha"></ion-input>
+
+  <ion-button color="success" (click)="cadastrar()"></ion-button>
+</ion-content>
